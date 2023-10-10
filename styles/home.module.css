@@ -1,221 +1,156 @@
 .main {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
+  width: 8.5in;
+  margin: 0 auto;
   font-family: var(--font-serif);
+  line-height: 1.5rem;
+  background: none;
 }
-.icon {
+.main > * {
+  width: 8in;
+  margin: 1rem auto;
+}
+.main > * + * {
+  margin-top: 0;
+}
+.main hr {
+  height: 1px;
+  border: none;
+  background-color: rgb(var(--border-rgb));
+}
+.main ul {
+  display: flex;
+}
+.main .icon {
   flex-shrink: 0;
   position: relative;
   top: 0.2em;
   margin-right: 0.5em;
 }
-
-.navbar {
-  position: relative;
-  padding-bottom: 1rem;
-  margin-bottom: 2rem;
-  width: 100%;
-  background: linear-gradient(
-    to right,
-    rgb(var(--primary-rgb), 0.5),
-    transparent
-  );
-}
-.navbar > .name {
-  letter-spacing: 0.3rem;
-  font-size: 3rem;
-  word-spacing: 1.5rem;
-  margin-left: 2rem;
-  font-variant: small-caps;
-}
-.navbar > hr {
-  margin: 0 1rem;
-  width: 36rem;
-  max-width: calc(100% - 4rem);
-  height: 1px;
-  border: none;
-  background-color: rgb(var(--border-rgb));
-}
-.navbar > .profession {
-  margin: 0.5rem 2rem;
-  letter-spacing: 0.1rem;
-  font-size: 1.2rem;
-  font-variant: small-caps;
-}
-
-.contact {
-  padding: 0 2rem;
-  font-size: 0.8rem;
-  font-family: var(--font-mono);
-}
-.contact > * {
-  margin-right: 0.5rem;
-}
-.contact > .divider {
-  position: relative;
-  display: inline-block;
-  top: 0.25rem;
-  width: 1px;
-  height: 1rem;
-  background-color: rgb(var(--border-rgb));
-}
-.contact > .iconset {
-  display: inline-flex;
-  width: 4em;
+.main > nav {
+  display: flex;
+  align-items: center;
   justify-content: space-between;
 }
-.contact > .iconset .icon {
-  margin: 0;
+.main > nav .logo {
+  width: 8rem;
+  height: 8rem;
 }
-.contact .qrcode {
+.main > nav .name {
+  margin: 1.5rem;
+  font-size: 3.5rem;
+  font-variant: small-caps;
+  letter-spacing: 0.1em;
+}
+.main > nav .school {
+  margin-left: 1.5rem;
+  font-size: 1.2rem;
+  font-variant: small-caps;
+  letter-spacing: 0.1em;
+}
+.main > nav hr {
+  width: 32rem;
+  margin: 0.5rem;
+}
+.main > nav .contact {
+  padding: 1rem 1.5rem;
+  font-size: 0.85rem;
+  line-height: 1em;
+  font-family: var(--font-mono);
+}
+.main > nav .divider {
+  display: inline-block;
+  width: 1px;
+  height: 1rem;
+  position: relative;
+  top: 0.25rem;
+  margin: 0 0.5rem;
+  background-color: rgb(var(--border-rgb));
+}
+.main > nav .iconset {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 4em;
+}
+.main > nav .qrcode {
   width: 8rem;
   height: 8rem;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-  height: 5rem;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 2rem;
-}
-.logo > .badge {
-  margin: 1rem;
-  width: 6rem;
-  height: 6rem;
-}
-.logo > .name {
-  width: 24rem;
-  height: 3rem;
-  margin-right: 1rem;
-}
-
-@media screen and (max-width: 75rem) {
-  .logo > .badge {
-    width: 8rem;
-    height: 8rem;
-  }
-  .logo > .name {
-    display: none;
-  }
-}
-@media screen and (max-width: 52rem) {
-  .navbar > .logo {
-    display: none;
-  }
-}
-
-.grid {
-  display: grid;
-  width: 100%;
-  grid-template:
-    'profile experience'
-    'education experience'
-    'skills experience'
-    /* '. experience' */
-    / 43% 57%;
-  grid-row-gap: 1rem;
-  grid-column-gap: 2rem;
-  padding: 0 2rem;
-}
-@media screen and (max-width: 64rem) {
-  .grid {
-    grid-template: 'profile' 'education' 'experience' 'skills' / 1fr;
-  }
-}
-.profile {
-  grid-area: profile;
-}
-.education {
-  grid-area: education;
-}
-.skills {
-  grid-area: skills;
-}
-.experience {
-  grid-area: experience;
-}
-
-.grid .title {
+.main > div .title {
   margin-bottom: 1rem;
   font-size: 1.5rem;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.1em;
+  font-variant: small-caps;
 }
-.grid .title > .icon {
-  margin-right: 1rem;
+.main > div > .content {
+  margin-left: 1rem;
 }
-
-.content {
-  width: 100%;
-  padding: 0.5rem 1rem;
+.main > div > .content > div {
+  margin: 0.75rem 0;
 }
-.content ul {
-  display: flex;
-  margin: 0.25rem;
+.main > div > .content > .item > div {
+  margin: 0.25rem 0;
 }
-.content .item + .item {
-  margin-top: 1.5rem;
+.main > div > .content > .item + .item {
+  margin-top: 1rem;
 }
-.content .line {
-  margin: 0.5rem 0;
-}
-.content .name {
+.main > div > .content .name {
   display: flex;
   justify-content: space-between;
   width: 100%;
   font-weight: bold;
 }
-.content .subname {
+.main > div > .content .subname {
   display: flex;
   justify-content: space-between;
   width: 100%;
   font-style: italic;
 }
-.content .left {
+.main > div > .content .left {
   text-align: left;
   margin-right: 1rem;
 }
-.content .right {
+.main > div > .content .right {
   text-align: right;
   margin-left: 1rem;
 }
-.content .head {
+.main > div > .content .head {
   margin: 1rem 0;
   font-size: 1.2rem;
   letter-spacing: 0.1rem;
   font-weight: bold;
 }
-.content .quote {
-  margin: 0.25em 0 0.25em 1em;
-  padding: 0 1em;
+.main > div > .content .attach {
+  text-decoration: underline;
+  word-wrap: none;
+  font-family: var(--font-mono);
+}
+.main > div > .content .attach .icon {
+  margin-right: 0.25em;
+}
+.main > div > .content .property {
+  text-indent: -1em;
+  margin-left: 1em;
+}
+.main > div > .content .quote {
+  margin: 0.25em 0 0.25em;
+  padding: 0 0.5em;
   border-left: 1px solid;
   opacity: 0.8;
 }
 
-.profile .avatar {
+.main > .profile > .content {
+  text-indent: 2rem;
+}
+.main > .profile > .content .portrait {
   float: left;
-  margin-right: 1rem;
+  margin-right: 2rem;
   width: 8rem;
-  border-radius: 1rem;
-  height: min-content;
+  height: fit-content;
 }
-
-.education .attach {
-  display: inline-block;
-  font-family: var(--font-mono);
-  font-size: 0.9rem;
-  margin-right: 0.5rem;
-  text-decoration: underline;
-  word-wrap: none;
-}
-
-.experience .title {
-  margin-bottom: -0.5rem;
-}
-
-.markdown {
-  line-height: 1.5rem;
+.main > .profile > .content .signature {
+  position: relative;
+  width: fit-content;
+  height: 1em;
+  top: 0.15em;
 }

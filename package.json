@@ -11,20 +11,20 @@
   },
   "dependencies": {
     "@types/markdown-it": "^12.2.3",
-    "@types/node": "18.15.11",
-    "@types/react": "18.0.35",
-    "@types/react-dom": "18.0.11",
+    "@types/node": "20.3.3",
+    "@types/react": "18.2.14",
+    "@types/react-dom": "18.2.6",
     "dotenv-cli": "^7.2.1",
-    "eslint": "8.38.0",
-    "eslint-config-next": "13.3.0",
+    "eslint": "8.44.0",
+    "eslint-config-next": "13.4.7",
     "markdown-it": "^13.0.1",
-    "next": "^13.3.0",
+    "next": "^13.4.7",
     "react": "18.2.0",
     "react-devicons": "^2.14.0",
     "react-dom": "18.2.0",
-    "react-icons": "^4.8.0",
-    "sharp": "^0.32.0",
-    "typescript": "5.0.4",
-    "zustand": "^4.3.7"
+    "react-icons": "^4.10.1",
+    "sharp": "^0.32.1",
+    "typescript": "5.1.6",
+    "zustand": "^4.3.8"
   }
 }
