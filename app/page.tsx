@@ -172,7 +172,7 @@ function Education() {
             <ul>
               <GoChevronRight className={styles.icon} />
               <div>
-                <em>Candidate of Guo Moruo Scholarship</em>&nbsp; (top 1%, the
+                <em>Candidate of Guo Moruo Scholarship</em>&nbsp;(top 1%, the
                 highest honor for undergraduates)
               </div>
             </ul>
@@ -294,7 +294,7 @@ function Research() {
               Diffusion Recommender Modeling via Conditional Denoising and
               Deconvolution.
             </em>
-            <div>(manuscript; full paper in progress)</div>
+            <div>(half-completed manuscript, available upon request)</div>
             <div className={styles.quote}>
               Abstract:&ensp;
               <em>
@@ -355,9 +355,9 @@ function Research() {
               <em>
                 We fine-tune RoBERTa, a state-of-the-art language model, to
                 detect misinformation on a social media platform. By comparing
-                the model performance under different input settings, we show
-                how the characteristics of user engagement affect automated
-                content moderation.
+                model performance under different input settings, we show how
+                the characteristics of user engagement affect automated content
+                moderation.
               </em>
             </div>
           </div>
@@ -381,7 +381,7 @@ function Research() {
               <em>
                 We extract multimodal features from short video advertisements
                 and fuse them with ladder-shaped cross-attention layers to
-                predict the sales lift of the advertised products. Experiments
+                predict the sales lift of advertised products. Experiments
                 demonstrate the superiority of our fusion method and the impacts
                 of different modalities.
               </em>
@@ -445,6 +445,19 @@ function Research() {
               Learning Behaviors.
             </em>
           </div>
+          <div className={styles.quote}>
+            Main idea:&ensp;
+            <em>
+              Updating consumers&apos; belief about product quality under the
+              signaling of price, sales and advertisements. To find the optimal
+              pricing policy for sellers, we estimate the model with
+              retrospective observational data and then perform dynamic
+              programming.
+            </em>{' '}
+            <br />
+          </div>
+          I am attempting to expand upon this project for my undergraduate
+          thesis, incorporating several new ideas.
         </div>
       </div>
     </div>
