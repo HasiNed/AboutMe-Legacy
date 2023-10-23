@@ -7,7 +7,7 @@
     "start": "dotenv -e .env -c -- bash -c 'next start -H $NEXTJS_HOST -p $NEXTJS_PORT'",
     "build": "dotenv -e .env -c -- bash -c 'next build'",
     "lint": "next lint",
-    "upload": "dotenv -e .env -c -- bash -c 'rclone sync out $RCLONE_DESTINATION --progress'"
+    "_upload": "dotenv -e .env -c -- bash -c 'rclone sync out $RCLONE_DESTINATION --progress'"
   },
   "dependencies": {
     "@types/markdown-it": "^12.2.3",

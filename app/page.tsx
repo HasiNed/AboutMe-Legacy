@@ -219,7 +219,7 @@ function Education() {
             {PRINT_MODE ? (
               <a
                 className={styles.attach}
-                href="http://home.ustc.edu.cn/~hasined/misc/%E7%BB%A9%E7%82%B9%E6%8E%92%E5%90%8D%E8%AF%81%E6%98%8E_%E5%87%BA%E5%9B%BD%E7%94%A8_%E6%9C%B1%E4%BA%91%E6%B2%81%28PB20061372%29.pdf"
+                href="https://drive.google.com/file/d/13YQyZHucyaUeHw_fi6d2PY8cRRBE5Auj/view?usp=sharing"
               >
                 <GrAttachment className={styles.icon} />
                 ranking.pdf
@@ -229,7 +229,7 @@ function Education() {
             {PRINT_MODE ? (
               <a
                 className={styles.attach}
-                href="http://home.ustc.edu.cn/~hasined/misc/%E6%99%AE%E9%80%9A%E6%88%90%E7%BB%A9%E5%8D%95%E8%8B%B1%E6%96%87_%E5%87%BA%E5%9B%BD%E7%94%A8_%E6%9C%B1%E4%BA%91%E6%B2%81%28PB20061372%29.pdf"
+                href="https://drive.google.com/file/d/1qaxfvxybTZSd1CHuMMdYPpkEMlHLivIx/view?usp=sharing"
               >
                 <GrAttachment className={styles.icon} />
                 transcript.pdf
