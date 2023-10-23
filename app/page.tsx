@@ -14,6 +14,7 @@ import {
   BsTencentQq,
   BsStars,
   BsFileEarmarkSlides,
+  BsLinkedin,
 } from 'react-icons/bs'
 import { FaSnapchat, FaLaptopCode } from 'react-icons/fa'
 import { IoIosMail } from 'react-icons/io'
@@ -81,6 +82,11 @@ function NavBar() {
           <a href="https://github.com/HasiNed">
             <BsGithub className={styles.icon} />
             HasiNed
+          </a>
+          <div className={styles.divider} />
+          <a href="https://www.linkedin.com/in/hasi-ned/">
+            <BsLinkedin className={styles.icon} />
+            hasi-ned
           </a>
           {PRINT_MODE ? null : (
             <>
