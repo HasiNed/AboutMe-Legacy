@@ -1,0 +1,157 @@
+.main {
+  width: 8.5in;
+  margin: 0 auto;
+  font-family: var(--font-serif);
+  line-height: 1.55rem;
+  background: none;
+}
+.main > * {
+  width: 8in;
+  margin: 1rem auto;
+}
+.main > * + * {
+  margin-top: 0;
+}
+.main hr {
+  height: 1px;
+  border: none;
+  background-color: rgb(var(--border-rgb));
+}
+.main ul {
+  display: flex;
+}
+.main .icon {
+  flex-shrink: 0;
+  position: relative;
+  top: 0.2em;
+  margin-right: 0.5em;
+}
+.main > nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main > nav .logo {
+  width: 8rem;
+  height: 8rem;
+}
+.main > nav .name {
+  margin: 1.5rem;
+  font-size: 3.5rem;
+  font-variant: small-caps;
+  letter-spacing: 0.1em;
+}
+.main > nav .school {
+  margin-left: 1.5rem;
+  font-size: 1.2rem;
+  font-variant: small-caps;
+  letter-spacing: 0.1em;
+}
+.main > nav hr {
+  width: 32rem;
+  margin: 0.5rem;
+}
+.main > nav .contact {
+  padding: 1rem 1.5rem;
+  font-size: 0.85rem;
+  line-height: 1em;
+  font-family: var(--font-mono);
+}
+.main > nav .divider {
+  display: inline-block;
+  width: 1px;
+  height: 1rem;
+  position: relative;
+  top: 0.25rem;
+  margin: 0 0.5rem;
+  background-color: rgb(var(--border-rgb));
+}
+.main > nav .iconset {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 4em;
+}
+.main > nav .qrcode {
+  width: 8rem;
+  height: 8rem;
+}
+
+.main > div .title {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.1em;
+  font-variant: small-caps;
+}
+.main > div > .content {
+  margin-left: 1rem;
+}
+.main > div > .content > div {
+  margin: 0.75rem 0;
+}
+.main > div > .content > .item > div {
+  margin: 0.25rem 0;
+}
+.main > div > .content > .item + .item {
+  margin-top: 1rem;
+}
+.main > div > .content .name {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-weight: bold;
+}
+.main > div > .content .subname {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-style: italic;
+}
+.main > div > .content .left {
+  text-align: left;
+  margin-right: 1rem;
+}
+.main > div > .content .right {
+  text-align: right;
+  margin-left: 1rem;
+}
+.main > div > .content .head {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+}
+.main > div > .content .attach {
+  /* text-decoration: underline; */
+  word-wrap: none;
+  font-family: var(--font-mono);
+}
+.main > div > .content .attach .icon {
+  margin-right: 0.25em;
+}
+.main > div > .content .property {
+  text-indent: -1em;
+  margin-left: 1em;
+}
+.main > div > .content .quote {
+  margin: 0.25em 0 0.25em;
+  padding: 0 0.5em;
+  border-left: 1px solid;
+  opacity: 0.8;
+}
+
+.main > div > .content article {
+  text-indent: 2rem;
+  text-align: justify;
+}
+.main > .profile > .content .portrait {
+  float: left;
+  margin-right: 2rem;
+  width: 8rem;
+  height: fit-content;
+}
+.main > .profile > .content .signature {
+  position: relative;
+  width: fit-content;
+  height: 1em;
+  top: 0.15em;
+}
