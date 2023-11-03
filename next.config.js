@@ -2,7 +2,7 @@
 const nextConfig = {
   output: 'export',
   images: { unoptimized: true },
-  // basePath: '/~hasined/about',
+  basePath: '/aboutme',
   webpack: (config) => {
     config.module.rules.push({
       test: /\.md$/,
