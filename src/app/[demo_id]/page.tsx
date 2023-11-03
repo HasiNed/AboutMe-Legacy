@@ -1,6 +1,6 @@
 import styles from '@/styles/demo.module.css'
 
-import { Metadata, ResolvingMetadata } from 'next'
+import { Metadata } from 'next'
 import Image from 'next/image'
 
 const all_demo: Record<
@@ -12,15 +12,15 @@ const all_demo: Record<
 > = {
   gl_demo: {
     title: 'OpenGL Demo',
-    images: ['/assets/gl_demo1.gif', '/assets/gl_demo2.gif'],
+    images: ['/aboutme/assets/gl_demo1.gif', '/aboutme/assets/gl_demo2.gif'],
   },
   reddit_demo: {
     title: 'Reddit Demo',
-    images: ['/assets/reddit_demo.gif'],
+    images: ['/aboutme/assets/reddit_demo.gif'],
   },
   sizerec_demo: {
     title: 'ML Project Demo',
-    images: ['/assets/sizerec_demo.svg'],
+    images: ['/aboutme/assets/sizerec_demo.svg'],
   },
 }
 

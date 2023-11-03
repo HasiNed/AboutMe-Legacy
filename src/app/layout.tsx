@@ -3,7 +3,7 @@ import '@/styles/globals.css'
 export const metadata = {
   title: 'About Yunqin Zhu',
   icons: {
-    icon: '/favicon.ico',
+    icon: '/aboutme/favicon.ico',
   },
 }
 
