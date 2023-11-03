@@ -1,33 +1,23 @@
 import styles from '@/styles/home.module.css'
 
-import logoBadge from '@/assets/ustc-badge.svg'
+import badge from '@/assets/ustc-badge.svg'
 import portrait from '@/assets/portrait.png'
 import signature from '@/assets/signature.png'
 
 import {
-  BsTools,
-  BsGithub,
-  BsWechat,
-  BsTencentQq,
-  BsStars,
-  BsLinkedin,
-} from 'react-icons/bs'
-import { FaSnapchat } from 'react-icons/fa'
-import { IoIosMail } from 'react-icons/io'
-import { IoSchoolOutline } from 'react-icons/io5'
-import {
   AiOutlineIdcard,
-  AiOutlineExperiment,
   AiOutlineTrophy,
+  AiOutlineExperiment,
 } from 'react-icons/ai'
+import { IoIosMail } from 'react-icons/io'
 import { GrAttachment } from 'react-icons/gr'
+import { IoSchoolOutline } from 'react-icons/io5'
 import { HiBuildingOffice2 } from 'react-icons/hi2'
 import { GoRepoForked, GoChevronRight } from 'react-icons/go'
+import { BsTools, BsGithub, BsStars, BsLinkedin } from 'react-icons/bs'
 
 import Link from 'next/link'
 import Image from 'next/image'
-import HoverImage from '@/components/HoverImage'
-import Expandable from '@/components/Expandable'
 
 const PRINT_MODE = true
 
@@ -72,26 +62,10 @@ function NavBar() {
             <BsLinkedin className={styles.icon} />
             hasi-ned
           </a>
-          {PRINT_MODE ? null : (
-            <>
-              <div className={styles.divider} />
-              <div className={styles.iconset}>
-                <HoverImage className={styles.qrcode} src={qqCode} alt="">
-                  <BsTencentQq className={styles.icon} />
-                </HoverImage>
-                <HoverImage className={styles.qrcode} src={wechatCode} alt="">
-                  <BsWechat className={styles.icon} />
-                </HoverImage>
-                <HoverImage className={styles.qrcode} src={snapchatCode} alt="">
-                  <FaSnapchat className={styles.icon} />
-                </HoverImage>
-              </div>
-            </>
-          )}
         </div>
       </div>
       <a href="https://en.ustc.edu.cn/">
-        <Image className={styles.logo} src={logoBadge} alt="" />
+        <Image className={styles.logo} src={badge} alt="" />
       </a>
     </nav>
   )
@@ -176,7 +150,7 @@ function Education() {
                 <a href="https://github.com/Dune-Z/Machine-Learning-Project">
                   Code
                 </a>
-                |<Link href="/MLProjectModel.svg">Demo</Link>]
+                |<Link href="/sizerec_demo">Demo</Link>]
               </div>
             </ul>
             <ul>
@@ -209,7 +183,7 @@ function Education() {
                 <a href="https://github.com/HasiNed/sentiment-annotator">
                   Code
                 </a>
-                |<Link href="/RedditDemo.gif">Demo</Link>]
+                |<Link href="/reddit_demo">Demo</Link>]
               </div>
             </ul>
             <ul>
@@ -220,7 +194,7 @@ function Education() {
                 <a href="https://github.com/HasiNed/my-ustc/tree/main/Misc/opengl%20learning">
                   Code
                 </a>
-                | ]
+                |<Link href="/gl_demo">Demo</Link>]
               </div>
             </ul>
           </div>
@@ -326,15 +300,6 @@ function Awards() {
             National 2nd prize in the Contemporary Undergraduate Mathematical
             Contest in Modeling 2022.
           </ul>
-          {/* <ul>
-          <GoChevronRight className={styles.icon} />
-          National 2nd prize in the 14th Chinese College Mathematics
-          Competition.
-        </ul> */}
-          {/* <ul>
-          <GoChevronRight className={styles.icon} />
-          Prizes in school-level programming competitions and hacker games.
-        </ul> */}
         </div>
       </div>
     </div>
