@@ -12,15 +12,18 @@ const all_demo: Record<
 > = {
   gl_demo: {
     title: 'OpenGL Demo',
-    images: ['/aboutme/assets/gl_demo1.gif', '/aboutme/assets/gl_demo2.gif'],
+    images: [
+      `${process.env.NEXT_PUBLIC_BASE_PATH}/assets/gl_demo1.gif`,
+      `${process.env.NEXT_PUBLIC_BASE_PATH}/assets/gl_demo2.gif`,
+    ],
   },
   reddit_demo: {
     title: 'Reddit Demo',
-    images: ['/aboutme/assets/reddit_demo.gif'],
+    images: [`${process.env.NEXT_PUBLIC_BASE_PATH}/assets/reddit_demo.gif`],
   },
   sizerec_demo: {
     title: 'ML Project Demo',
-    images: ['/aboutme/assets/sizerec_demo.svg'],
+    images: [`${process.env.NEXT_PUBLIC_BASE_PATH}/assets/sizerec_demo.svg`],
   },
 }
 
