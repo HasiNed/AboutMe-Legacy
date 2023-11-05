@@ -86,17 +86,11 @@ function Profile() {
             <Image className={styles.signature} src={signature} alt="朱云沁" />,
             a senior student in Artificial Intelligence, graduating from
             University of Science and Technology of China. My undergraduate
-            research lies at the crossroads of machine learning and social
-            computing, where data-driven models meet human-centered designs. My
-            aspiration is for my efforts to offer reliable decision support and
-            foster positive societal impacts.
-          </div>
-          <div>
-            Beyond my prior experience, I am also deeply enthusiastic about the
-            ongoing advancements in AI-generated content and large language
-            models, as they continue to shape the forefront of artificial
-            general intelligence and drive a myriad of mind-blowing
-            applications.
+            research lies at the crossroads of machine learning and information
+            systems, with applications in recommendation, online marketing, and
+            social media analysis. By integrating data-driven models with
+            human-centered designs, my aspiration is for my efforts to provide
+            reliable decision support and create positive societal impacts.
           </div>
           <div>
             At this moment, I am actively seeking a PhD/MPhil position in the
@@ -266,7 +260,7 @@ function Awards() {
           <ul>
             <GoChevronRight className={styles.icon} />
             <div>
-              <em>Talent Program Scholarship</em>, top 2 in the AI major at
+              <em>Talent Program Scholarship</em>, top 1st in the AI major at
               USTC, 2023.
             </div>
           </ul>
@@ -346,14 +340,14 @@ function Experience() {
             <ul>
               <GoChevronRight className={styles.icon} />
               <div>
-                Conditional Diffusion Models for Collaborative Filtering.
+                Towards Better Diffusion Modeling for Collaborative Filtering.
               </div>
             </ul>
             <ul>
               <GoChevronRight className={styles.icon} />
               <div>
-                Dynamic Modeling of Short-Video Advertising Effects and
-                Explainable Forecasting of Product Sales.
+                Dynamic and Explainable Sales Forecasting under
+                Influencer Marketing.
               </div>
             </ul>
           </div>
@@ -388,14 +382,13 @@ function Experience() {
             <ul>
               <GoChevronRight className={styles.icon} />
               <div>
-                Analyzing the Effects of User Engagement for Content Moderation
-                on Social Media.
+                Analyzing the Effects of User Engagement for Content Moderation.
               </div>
             </ul>
             <ul>
               <GoChevronRight className={styles.icon} />
               <div>
-                Predicting Product Sales from Short Video Advertisements Using
+                Predicting Sales Lift from Short Video Advertisements Using
                 Multi-Modal Deep Learning.
               </div>
             </ul>
@@ -554,8 +547,8 @@ function Skills() {
         </ul>
         <ul>
           <GoChevronRight className={styles.icon} />
-          Language Scores:&ensp;TOEFL iBT:&nbsp;<em>104</em>,&ensp;GRE General:
-          &nbsp;<em>329</em>,&ensp;CET-4/6:&nbsp;<em>638/625</em>
+          Language Scores:&ensp;TOEFL iBT:&nbsp;<em>104 (30+27+23+24)</em>,&ensp;GRE General:
+          &nbsp;<em>329 (159+170+4.0)</em>
         </ul>
       </div>
     </div>
