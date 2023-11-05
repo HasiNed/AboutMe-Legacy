@@ -1,21 +1,24 @@
 .main {
-  width: 8.5in;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
   font-family: var(--font-serif);
   line-height: 1.55rem;
-  background: none;
+  margin: auto;
+  width: 9in;
+  padding: 1rem 0.25in;
+  filter: drop-shadow(0.2rem 0.2rem 0.3rem rgba(0, 0, 0, 0.3));
 }
-.main > * {
-  width: 8in;
-  margin: 1rem auto;
+.main > div {
+  width: 8.5in;
+  padding: 1rem;
 }
-.main > * + * {
-  margin-top: 0;
+.main > div + div {
+  margin-top: 1rem;
 }
 .main hr {
   height: 1px;
   border: none;
-  background-color: rgb(var(--border-rgb));
+  background-color: black;
 }
 .main ul {
   display: flex;
@@ -30,6 +33,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 1rem;
 }
 .main > nav .logo {
   width: 8rem;
@@ -64,18 +68,17 @@
   position: relative;
   top: 0.25rem;
   margin: 0 0.5rem;
-  background-color: rgb(var(--border-rgb));
+  background-color: black;
 }
 .main > nav .iconset {
   display: inline-flex;
   justify-content: space-between;
   width: 4em;
 }
-.main > nav .qrcode {
-  width: 8rem;
-  height: 8rem;
+.main > div {
+  background-color: white;
+  border-radius: 0.5rem;
 }
-
 .main > div .title {
   margin-bottom: 1rem;
   font-size: 1.5rem;
@@ -154,4 +157,10 @@
   width: fit-content;
   height: 1em;
   top: 0.15em;
+}
+.main > footer {
+  margin-top: 1rem;
+  font-size: small;
+  font-family: var(--font-mono);
+  text-align: right;
 }

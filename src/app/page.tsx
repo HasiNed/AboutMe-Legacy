@@ -30,6 +30,7 @@ export default async function HomePage() {
       <Awards />
       <Experience />
       <Skills />
+      <Footer />
     </main>
   )
 }
@@ -171,7 +172,7 @@ function Education() {
             </ul>
             <ul>
               <GoChevronRight className={styles.icon} />A full-stack annotation
-              tool for sentiment analysis.&ensp;
+              tool for sentiment analysis research.&ensp;
               <div className={styles.attach}>
                 [
                 <a href="https://github.com/HasiNed/sentiment-annotator">
@@ -193,10 +194,10 @@ function Education() {
             </ul>
           </div>
           <div>
-            Top-Graded Courses:&ensp;
+            Top-Scoring Courses:&ensp;
             <em>
-              Machine Learning, Game Theory, Algorithms, Probability Theory,
-              etc.
+              Machine Learning, Game Theory, Intro to Algorithms, Probability
+              Theory, etc.
             </em>
           </div>
           <div>
@@ -346,8 +347,8 @@ function Experience() {
             <ul>
               <GoChevronRight className={styles.icon} />
               <div>
-                Dynamic and Explainable Sales Forecasting under
-                Influencer Marketing.
+                Dynamic and Explainable Sales Forecasting under Influencer
+                Marketing.
               </div>
             </ul>
           </div>
@@ -382,7 +383,7 @@ function Experience() {
             <ul>
               <GoChevronRight className={styles.icon} />
               <div>
-                Analyzing the Effects of User Engagement for Content Moderation.
+                Analyzing the Effects of User Engagement on Content Moderation.
               </div>
             </ul>
             <ul>
@@ -393,124 +394,7 @@ function Experience() {
               </div>
             </ul>
           </div>
-          {/* <div>
-            (published by IEEE ,&ensp;
-            <a
-              className={styles.attach}
-              href="https://doi.org/10.1109/ASSP57481.2022.00022"
-            >
-              doi
-            </a>
-            )
-            <div className={styles.quote}>
-              Abstract:&ensp;
-              <em>
-                We fine-tune RoBERTa, a state-of-the-art language model, to
-                detect misinformation on a social media platform. By comparing
-                model performance under different input settings, we show how
-                the characteristics of user engagement affect automated content
-                moderation.
-              </em>
-            </div>
-          </div>
-          <div>
-            Research Topic 2:&ensp;
-            <em>
-              Predicting Sales Lift of Influencer-generated Short Video
-              Advertisements: A Ladder Attention-based Multimodal Time Series
-              Forecasting Framework.
-            </em>
-            &ensp;(accepted by HICSS ,&ensp;
-            <a
-              className={styles.attach}
-              href="http://home.ustc.edu.cn/~hasined/misc/HICSS%202024%20Sales%20Lift%20Camera%20Ready.pdf"
-            >
-              pdf
-            </a>
-            )
-            <div className={styles.quote}>
-              Abstract:&ensp;
-              <em>
-                We extract multimodal features from short video advertisements
-                and fuse them with ladder-shaped cross-attention layers to
-                predict the sales lift of advertised products. Experiments
-                demonstrate the superiority of our fusion method and the impacts
-                of different modalities.
-              </em>
-            </div>
-          </div> */}
         </div>
-        {/* <div>
-            Research Topic 3:&ensp;
-            <em>
-              Applying N-shot learning on semi-labeled data to deepen the
-              understanding of public attitudes towards different post-pandemic
-              trending topics on social media.
-            </em>
-            &ensp;(in progress)
-            <ul>
-              <GoChevronRight className={styles.icon} />
-              Problem:&ensp;
-            </ul>
-            <ul>
-              <GoChevronRight className={styles.icon} />
-              Method:&ensp;
-            </ul>
-          </div> */}
-        {/* 
-        <div className={styles.item}>
-          <div>
-            <div className={styles.name}>
-              <div className={styles.left}>
-                University of Science and Technology of China
-              </div>
-              <div className={styles.right}>Hefei, China</div>
-            </div>
-            <hr />
-            <div className={styles.subname}>
-              <div className={styles.left}>
-                Student Innovation Program, Department of Management Science
-              </div>
-              <div className={styles.right}>May 2023 - Present</div>
-            </div>
-          </div>
-          <div>
-            Supervisors:&ensp;
-            <em>
-              <a href="http://bs.ustc.edu.cn/English/profile-70.html">
-                Prof. Yongjun Li
-              </a>
-              &nbsp;&&nbsp;
-              <a href="https://bs.ustc.edu.cn/english/profile-1708.html">
-                Dr. Lizheng Wang
-              </a>
-            </em>
-          </div>
-          <div>
-            Fields of Study:&ensp;
-            <em>Information System → Dynamic Pricing & Bayesian Learning Model</em>
-          </div>
-          <div>
-            Research Topic:&ensp;
-            <em>
-              Data-driven Dynamic Pricing Optimization under Consumers&apos;
-              Learning Behaviors.
-            </em>
-          </div>
-          <div className={styles.quote}>
-            Main idea:&ensp;
-            <em>
-              Updating consumers&apos; belief about product quality under the
-              signaling of price, sales and advertisements. To find the optimal
-              pricing policy for sellers, we estimate the model with
-              retrospective observational data and then perform dynamic
-              programming.
-            </em>{' '}
-            <br />
-          </div>
-          I am attempting to expand upon this project for my undergraduate
-          thesis, incorporating several new ideas.
-        </div> */}
       </div>
     </div>
   )
@@ -547,10 +431,18 @@ function Skills() {
         </ul>
         <ul>
           <GoChevronRight className={styles.icon} />
-          Language Scores:&ensp;TOEFL iBT:&nbsp;<em>104 (30+27+23+24)</em>,&ensp;GRE General:
-          &nbsp;<em>329 (159+170+4.0)</em>
+          Language Scores:&ensp;TOEFL iBT:&nbsp;<em>104 (30+27+23+24)</em>
+          ,&ensp;GRE General: &nbsp;<em>329 (159+170+4.0)</em>
         </ul>
       </div>
     </div>
+  )
+}
+
+function Footer() {
+  return (
+    <footer>
+      <div>Last updated on {process.env.NEXT_PUBLIC_LAST_COMMIT_DATE}</div>
+    </footer>
   )
 }
