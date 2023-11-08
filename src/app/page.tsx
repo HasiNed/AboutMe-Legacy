@@ -77,7 +77,7 @@ function Profile() {
     <div className={styles.profile}>
       <div className={styles.title}>
         <AiOutlineIdcard className={styles.icon} />
-        Profile
+        About Me
       </div>
       <div className={styles.content}>
         <Image className={styles.portrait} src={portrait} alt="" />
@@ -132,8 +132,15 @@ function Education() {
           </div>
           <div>
             <BsStars className={styles.icon} />
-            GPA: <em>4.06/4.3</em>,&ensp;Rank: <em>1/229</em>
-            {/* higher than 2nd - 5th place with statistical significance (p < 0.01)*/}
+            Rank: <em>1/229</em>,&ensp;GPA: <em>4.06/4.3</em>,&ensp;Average
+            Score: <em>93.33/100</em>
+          </div>
+          <div>
+            Selected Courses:&ensp;
+            <em>
+              Machine Learning (98), Game Theory (97), Intro to Algorithms (96),
+              Probability Theory (99)
+            </em>
           </div>
           <div>
             Selected Projects:&ensp;
@@ -194,33 +201,22 @@ function Education() {
             </ul>
           </div>
           <div>
-            Top-Scoring Courses:&ensp;
-            <em>
-              Machine Learning, Game Theory, Intro to Algorithms, Probability
-              Theory, etc.
-            </em>
-          </div>
-          <div>
             References:&ensp;
-            {PRINT_MODE ? (
-              <a
-                className={styles.attach}
-                href="https://drive.google.com/file/d/13YQyZHucyaUeHw_fi6d2PY8cRRBE5Auj/view?usp=sharing"
-              >
-                <GrAttachment className={styles.icon} />
-                <u>ranking.pdf</u>
-              </a>
-            ) : null}
+            <a
+              className={styles.attach}
+              href="https://drive.google.com/file/d/13YQyZHucyaUeHw_fi6d2PY8cRRBE5Auj/view?usp=sharing"
+            >
+              <GrAttachment className={styles.icon} />
+              <u>ranking.pdf</u>
+            </a>
             &ensp;
-            {PRINT_MODE ? (
-              <a
-                className={styles.attach}
-                href="https://drive.google.com/file/d/1qaxfvxybTZSd1CHuMMdYPpkEMlHLivIx/view?usp=sharing"
-              >
-                <GrAttachment className={styles.icon} />
-                <u>transcript.pdf</u>
-              </a>
-            ) : null}
+            <a
+              className={styles.attach}
+              href="https://drive.google.com/file/d/1qaxfvxybTZSd1CHuMMdYPpkEMlHLivIx/view?usp=sharing"
+            >
+              <GrAttachment className={styles.icon} />
+              <u>transcript.pdf</u>
+            </a>
             &ensp;
             <a
               className={styles.attach}
@@ -241,7 +237,7 @@ function Awards() {
     <div className={styles.awards}>
       <div className={styles.title}>
         <AiOutlineTrophy className={styles.icon} />
-        Awards
+        Honors & Awards
       </div>
       <div className={styles.content}>
         <div>
@@ -261,8 +257,8 @@ function Awards() {
           <ul>
             <GoChevronRight className={styles.icon} />
             <div>
-              <em>Talent Program Scholarship</em>, top 1st in the AI major at
-              USTC, 2023.
+              <em>Talent Program Scholarship</em>, 1st in the AI major at USTC,
+              2023.
             </div>
           </ul>
           <ul>
@@ -276,8 +272,8 @@ function Awards() {
             <GoChevronRight className={styles.icon} />
             <div>
               (Candidate)&nbsp;
-              <em>Guo Moruo Scholarship</em>, top 1%, the highest honor for
-              USTCers, 2024.
+              <em>Guo Moruo Scholarship</em>, the highest honor for USTC
+              students, 2024.
             </div>
           </ul>
         </div>
@@ -306,7 +302,7 @@ function Experience() {
     <div className={styles.experience}>
       <div className={styles.title}>
         <AiOutlineExperiment className={styles.icon} />
-        Experience
+        Research Experience
       </div>
       <div className={styles.content}>
         <div className={styles.item}>
@@ -340,16 +336,16 @@ function Experience() {
             Research Topics:
             <ul>
               <GoChevronRight className={styles.icon} />
-              <div>
-                Towards Better Diffusion Modeling for Collaborative Filtering.
+              Towards Graph-Aware Diffusion Modeling for Collaborative
+              Filtering.&ensp;
+              <div className={styles.attach}>
+                [<Link href="diffusion_cf">Demo</Link>]
               </div>
             </ul>
             <ul>
               <GoChevronRight className={styles.icon} />
-              <div>
-                Dynamic and Explainable Sales Forecasting under Influencer
-                Marketing.
-              </div>
+              Dynamic and Explainable Sales Forecasting under Influencer
+              Marketing. (To be started)
             </ul>
           </div>
         </div>
@@ -382,15 +378,26 @@ function Experience() {
             Research Topics:
             <ul>
               <GoChevronRight className={styles.icon} />
-              <div>
-                Analyzing the Effects of User Engagement on Content Moderation.
+              Analyzing the Effects of User Engagement on Content
+              Moderation.&ensp;
+              <div className={styles.attach}>
+                [
+                <a href="https://ieeexplore.ieee.org/document/10121711/">
+                  Paper
+                </a>
+                |<Link href="uncc_content_moderation">Demo</Link>]
               </div>
             </ul>
             <ul>
               <GoChevronRight className={styles.icon} />
-              <div>
-                Predicting Sales Lift from Short Video Advertisements Using
-                Multi-Modal Deep Learning.
+              Predicting Sales Lift from Short Video Advertisements Using
+              Multi-Modal Deep Learning.&ensp;
+              <div className={styles.attach}>
+                [
+                <a href="http://home.ustc.edu.cn/~hasined/misc/HICSS%202024%20Sales%20Lift%20Camera%20Ready.pdf">
+                  Paper
+                </a>
+                |<Link href="uncc_short_video">Demo</Link>]
               </div>
             </ul>
           </div>
@@ -405,7 +412,7 @@ function Skills() {
     <div>
       <div className={styles.title}>
         <BsTools className={styles.icon} />
-        Skills
+        Professional Skills
       </div>
       <div className={styles.content}>
         <ul>
@@ -426,8 +433,7 @@ function Skills() {
         </ul>
         <ul>
           <GoChevronRight className={styles.icon} />
-          Other Developer Skills:&ensp;Linux, Git, Docker, VSCode, Next.js,
-          OpenGL
+          Developer Skills:&ensp;Linux, Git, Docker, VSCode, Next.js, OpenGL
         </ul>
         <ul>
           <GoChevronRight className={styles.icon} />

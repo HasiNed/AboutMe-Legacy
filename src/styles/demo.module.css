@@ -7,8 +7,9 @@
   font-family: var(--font-serif);
 }
 
-.main h1 {
-  margin-bottom: 2rem;
+.main article {
+  margin: 1rem;
+  background: none;
 }
 
 .image {
