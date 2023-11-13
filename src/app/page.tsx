@@ -309,14 +309,14 @@ function Experience() {
           <div>
             <div className={styles.name}>
               <div className={styles.left}>
-                Hong Kong University of Science and Technology
+                The Hong Kong University of Science and Technology
               </div>
               <div className={styles.right}>Guangzhou, China</div>
             </div>
             <hr />
             <div className={styles.subname}>
               <div className={styles.left}>
-                Research Assistant, Thrust of Artificial Intelligence
+                Research Assistant, Artificial Intelligence Thrust
               </div>
               <div className={styles.right}>July 2023 - Present</div>
             </div>
@@ -338,6 +338,7 @@ function Experience() {
               <GoChevronRight className={styles.icon} />
               Towards Graph-Aware Diffusion Modeling for Collaborative
               Filtering.&ensp;
+              <BsStars className={styles.icon} />
               <div className={styles.attach}>
                 [<Link href="diffusion_cf">Demo</Link>]
               </div>
@@ -437,7 +438,7 @@ function Skills() {
         </ul>
         <ul>
           <GoChevronRight className={styles.icon} />
-          Language Scores:&ensp;TOEFL iBT:&nbsp;<em>104 (30+27+23+24)</em>
+          English Proficiency:&ensp;TOEFL iBT:&nbsp;<em>104 (30+27+23+24)</em>
           ,&ensp;GRE General: &nbsp;<em>329 (159+170+4.0)</em>
         </ul>
       </div>

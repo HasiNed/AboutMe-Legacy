@@ -96,25 +96,14 @@ As a Remote Research Assistant at UNC Charlotte, my responsibilities involve dev
     markdown: `
 ## Summer Research: Towards Graph-Aware Diffusion Modeling for Collaborative Filtering
 
-- Abstract: Recovering masked feedback with neural models is a popular paradigm in recommender systems. Inspired by the success of diffusion models in solving ill-posed inverse problems, we introduce a conditional diffusion framework for collaborative filtering. This framework iteratively reconstructs hidden interactions guided by user historical behaviors. To better align with the intrinsic characteristics of implicit feedback data, we implement forward diffusion by applying synthetic smoothing filters to interaction signals on an item-item graph. The resulting reverse diffusion can be interpreted as a personalized process that gradually refines preference scores. Through an affine transformation, we equivalently characterize this model as an anisotropic Gaussian diffusion in the graph frequency domain, establishing both forward and reverse formulations. Our current model achieves state-of-the-art performance on one benchmark dataset and holds promise for generalization to larger datasets.
+Preprint (Available soon): <u>Y. Zhu</u>, C. Wang, and H. Xiong, “Towards Graph-Aware Diffusion Modeling for Collaborative Filtering,” 2023.
+
+- Abstract: Recovering masked feedback with neural models is a popular paradigm in recommender systems. Seeing the success of diffusion models in solving ill-posed inverse problems, we introduce a conditional diffusion framework for collaborative filtering that iteratively reconstructs a user’s hidden preferences guided by its historical interactions. To better align with the intrinsic characteristics of implicit feedback data, we implement forward diffusion by applying synthetic smoothing filters to interaction signals on an item-item graph. The resulting reverse diffusion can be interpreted as a personalized process that gradually refines preference scores. Through graph Fourier transform, we equivalently characterize this model as an anisotropic Gaussian diffusion in the graph spectral domain, establishing both forward and reverse formulations. Our model outperforms state-of-the-art methods by a large margin on one dataset and yields competitive results on the others.
 
 ![](${basePath}/assets/diffusion_cf1.png)
 ![](${basePath}/assets/diffusion_cf2.png)
-
-- Results on Movielens-1M:
-
-|              |   Recall@10  |   Recall@20  |   NDCG@10  |   NDCG@20  |   MRR@10  |   MRR@20  |
-|--------------|--------------|--------------|------------|------------|-----------|-----------|
-|   MF         |   0.0885     |   0.1389     |   0.0680   |   0.0871   |   0.1202  |   0.1325  |
-|   LightGCN   |   0.1112     |   0.1798     |   0.0838   |   0.1089   |   0.1363  |   0.1495  |
-|   DLAE       |   0.1180     |   0.1867     |   0.0904   |   0.1165   |   0.1478  |   0.1607  |
-|   MultVAE    |   0.1170     |   0.1833     |   0.0898   |   0.1149   |   0.1493  |   0.1616  |
-|   DiffRec    |   0.1178     |   0.1827     |   0.0901   |   0.1148   |   0.1507  |   0.1630  |
-|   L-DiffRec  |   0.1174     |   0.1847     |   0.0868   |   0.1122   |   0.1394  |   0.1520  |
-|   LinkProp   |   0.1039     |   0.1509     |   0.0852   |   0.1031   |   0.1469  |   0.1574  |
-|   BSPM       |   0.1107     |   0.1740     |   0.0838   |   0.1079   |   0.1388  |   0.1513  |
-|   Ours (forward only)     |   0.1182     |   0.1869     |   0.0897   |   0.1153   |   0.1436  |   0.1559  |
-|   Ours     |   **0.1236**     |   **0.1888**     |   **0.0957**   |   **0.1210**   |   **0.1561**  |   **0.1686**  |
+![](${basePath}/assets/diffusion_cf3.png)
+![](${basePath}/assets/diffusion_cf4.png)
 
     `,
   },
