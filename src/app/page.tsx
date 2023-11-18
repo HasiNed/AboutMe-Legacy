@@ -335,12 +335,13 @@ function Experience() {
           <div>
             Research Topics:
             <ul>
-              <GoChevronRight className={styles.icon} />
+              {/* <GoChevronRight className={styles.icon} /> */}
+              <BsStars className={styles.icon} />
               Towards Graph-Aware Diffusion Modeling for Collaborative
               Filtering.&ensp;
-              <BsStars className={styles.icon} />
               <div className={styles.attach}>
-                [<Link href="diffusion_cf">Demo</Link>]
+                [<a href="https://arxiv.org/abs/2311.08744">Preprint</a>|
+                <Link href="diffusion_cf">Demo</Link>]
               </div>
             </ul>
             <ul>

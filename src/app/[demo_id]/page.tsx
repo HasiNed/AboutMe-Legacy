@@ -96,7 +96,7 @@ As a Remote Research Assistant at UNC Charlotte, my responsibilities involve dev
     markdown: `
 ## Summer Research: Towards Graph-Aware Diffusion Modeling for Collaborative Filtering
 
-Preprint (Available soon): <u>Y. Zhu</u>, C. Wang, and H. Xiong, “Towards Graph-Aware Diffusion Modeling for Collaborative Filtering,” 2023.
+Paper (arXiv Preprint): <u>Y. Zhu</u>, C. Wang, and H. Xiong, “Towards Graph-Aware Diffusion Modeling for Collaborative Filtering,” 2023.
 
 - Abstract: Recovering masked feedback with neural models is a popular paradigm in recommender systems. Seeing the success of diffusion models in solving ill-posed inverse problems, we introduce a conditional diffusion framework for collaborative filtering that iteratively reconstructs a user’s hidden preferences guided by its historical interactions. To better align with the intrinsic characteristics of implicit feedback data, we implement forward diffusion by applying synthetic smoothing filters to interaction signals on an item-item graph. The resulting reverse diffusion can be interpreted as a personalized process that gradually refines preference scores. Through graph Fourier transform, we equivalently characterize this model as an anisotropic Gaussian diffusion in the graph spectral domain, establishing both forward and reverse formulations. Our model outperforms state-of-the-art methods by a large margin on one dataset and yields competitive results on the others.
 
