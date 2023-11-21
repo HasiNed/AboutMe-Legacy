@@ -246,35 +246,34 @@ function Awards() {
           <ul>
             <GoChevronRight className={styles.icon} />
             <div>
+              (Candidate)&nbsp;
+              <em>Guo Moruo Scholarship</em>, the highest honor for USTC
+              students, 2024.
+            </div>
+          </ul>
+          <ul>
+            <GoChevronRight className={styles.icon} />
+            <div>
               <em>National Scholarship</em>, top 1% at USTC, 2022 & 2023.
             </div>
           </ul>
           <ul>
             <GoChevronRight className={styles.icon} />
             <div>
+              <em>Talent Program Scholarship</em>, 1st in AI at USTC, 2023.
+            </div>
+          </ul>
+          <ul>
+            <GoChevronRight className={styles.icon} />
+            <div>
+              <em>Shenzhen Stock Exchange Scholarship</em>, top 1% in CS at
+              USTC, 2022.
+            </div>
+          </ul>
+          <ul>
+            <GoChevronRight className={styles.icon} />
+            <div>
               <em>Outstanding Student Scholarship</em> at USTC, 2020 & 2021.
-            </div>
-          </ul>
-          <ul>
-            <GoChevronRight className={styles.icon} />
-            <div>
-              <em>Talent Program Scholarship</em>, 1st in the AI major at USTC,
-              2023.
-            </div>
-          </ul>
-          <ul>
-            <GoChevronRight className={styles.icon} />
-            <div>
-              <em>Shenzhen Stock Exchange Scholarship</em>, top 1% in the CS
-              field at USTC, 2022.
-            </div>
-          </ul>
-          <ul>
-            <GoChevronRight className={styles.icon} />
-            <div>
-              (Candidate)&nbsp;
-              <em>Guo Moruo Scholarship</em>, the highest honor for USTC
-              students, 2024.
             </div>
           </ul>
         </div>
@@ -317,7 +316,7 @@ function Experience() {
             <hr />
             <div className={styles.subname}>
               <div className={styles.left}>
-                Research Assistant, Artificial Intelligence Thrust
+                Undergraduate Research Assistant, Artificial Intelligence Thrust
               </div>
               <div className={styles.right}>July 2023 - Present</div>
             </div>
@@ -363,7 +362,8 @@ function Experience() {
             <hr />
             <div className={styles.subname}>
               <div className={styles.left}>
-                Remote Research Assistant, KAIM Lab, Belk College of Business&nbsp;
+                (Remote) Undergraduate Research Assistant, Belk College of
+                Business&nbsp;
               </div>
               <div className={styles.right}>April 2022 - June 2023</div>
             </div>
@@ -373,9 +373,12 @@ function Experience() {
             <a href="https://belkcollege.charlotte.edu/directory/lina-zhou">
               Prof. Lina Zhou
             </a>
-            &nbsp;and her PhD fellows, I learned the basics of information
-            systems research and contributed to discussions, data visualization,
-            and paper writing.
+            &nbsp;and her PhD fellows at{' '}
+            <a href="https://belkcollegeofbusiness.charlotte.edu/kaim/team/">
+              KAIM Lab
+            </a>
+            , I learned the basics of information systems research and
+            contributed to discussions, data visualization, and paper writing.
           </div>
           <div>
             Research Topics:
