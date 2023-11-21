@@ -316,7 +316,7 @@ function Experience() {
             <hr />
             <div className={styles.subname}>
               <div className={styles.left}>
-                Undergraduate Research Assistant, Artificial Intelligence Thrust
+                Research Assistant (Internship), Artificial Intelligence Thrust
               </div>
               <div className={styles.right}>July 2023 - Present</div>
             </div>
@@ -362,7 +362,7 @@ function Experience() {
             <hr />
             <div className={styles.subname}>
               <div className={styles.left}>
-                (Remote) Undergraduate Research Assistant, Belk College of
+                Undergraduate Researcher (Remote, Informal), Belk College of
                 Business&nbsp;
               </div>
               <div className={styles.right}>April 2022 - June 2023</div>
