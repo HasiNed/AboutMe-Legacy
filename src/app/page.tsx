@@ -88,10 +88,11 @@ function Profile() {
             a senior student in Artificial Intelligence, graduating from
             University of Science and Technology of China. My undergraduate
             research lies at the crossroads of machine learning and information
-            systems, with applications in recommendation, online marketing, and
-            social media analysis. By integrating data-driven models with
-            human-centered designs, my aspiration is for my efforts to provide
-            reliable decision support and create positive societal impacts.
+            systems, with applications in social media analysis, online
+            marketing and recommender systems. In my future plans, I aim to
+            delve deeper into the realm of AI for social good, laying
+            theoretical foundations for explainable machine learning and
+            offering reliable support to policy makers.
           </div>
           <div>
             At this moment, I am actively seeking a PhD/MPhil position in the
@@ -347,7 +348,7 @@ function Experience() {
             <ul>
               <GoChevronRight className={styles.icon} />
               Dynamic and Explainable Sales Forecasting under Influencer
-              Marketing. (To be started)
+              Marketing. (<em>In preparation for undergrad thesis</em>)
             </ul>
           </div>
         </div>
@@ -362,7 +363,7 @@ function Experience() {
             <hr />
             <div className={styles.subname}>
               <div className={styles.left}>
-                Remote Research Assistant, Belk College of Business&nbsp;
+                Remote Research Assistant, KAIM Lab, Belk College of Business&nbsp;
               </div>
               <div className={styles.right}>April 2022 - June 2023</div>
             </div>
