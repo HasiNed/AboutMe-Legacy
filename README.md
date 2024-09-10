@@ -1,2 +1,2 @@
-# aboutme
-My academic portfolio, built with Next.js beta.
+# AboutMe
+Personal website built with Next.js beta.
